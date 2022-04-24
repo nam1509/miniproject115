@@ -38,10 +38,11 @@ export default function Register({ token }) {
     }
 
     const registerForm = () => (
-        <div className={styles.gridContainer}>
-            <div>
+        <div className=" bg-amber-300 shadow rounded-lg lg:w-1/3  md:w-3/2 w-full p-4 mt-16 relative m-4   flex flex-col items-center justify-center">
+            <h3 class="text-2xl font-bold text-center shadow">SignUp to your account</h3><br></br><br></br>
+            <div className="text-xl font-small">
                 Username:
-            </div>
+                </div><br></br>
             <div>
                 <input type="text"
                     name="username"
