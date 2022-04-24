@@ -46,29 +46,31 @@ export default function Register({ token }) {
             <div>
                 <input type="text"
                     name="username"
-                    placeholder="username"
+                    placeholder="username" className="text-xl font-medium leading-none text-gray-800"
                     onChange={(e) => setUsername(e.target.value)}
                 />
-            </div>
+            </div><br></br>
             <div>
                 Email:
-            </div>
+            </div><br></br>
             <div>
                 <input type="email"
                     name="email"
-                    placeholder="email"
+                    placeholder="email" className="text-xl font-medium leading-none text-gray-800"
                     onChange={(e) => setEmail(e.target.value)} />
-            </div>
+            </div><br></br>
             <div>
                 Password:
-            </div>
+            </div><br></br>
             <div>
                 <input type="password"
                     name="password"
-                    placeholder="password"
+                    placeholder="password"  className="text-xl font-medium leading-none text-gray-800"
                     onChange={(e) => setPassword(e.target.value)} />
-            </div>
-
+            </div><br></br><br></br>
+            <div>
+                    <button className="bg-amber-600 mr-4 p-2 hover:text-[#EEEEEE] rounded-lg drop-shadow-lg  font-display"  onClick={register}>Register</button>
+             </div>
         </div>
     )
 
@@ -78,25 +80,14 @@ export default function Register({ token }) {
             <Head>
                 <title>Register</title>
             </Head>
-            <div className={styles.container}>
                 <Navbar />
-                <h1>Register</h1>
-                <div><b>Token:</b> {token.substring(0, 15)}...
-                <button
-                        onClick={() => { navigator.clipboard.writeText(token) }}>
-                        Copy token
-                </button>
-                </div>
-                <br />
-            Status:  {status}
-                <br /><br />
-                <div className={styles.content}>
-                    {registerForm()}
-                </div>
 
                 <div>
-                    <button onClick={register}>Register</button>
+                <div className="flex flex-col items-center justify-center">
+                    {registerForm()}
                 </div>
+ Status:  {status}
+                
             </div>
         </Layout>
     )
