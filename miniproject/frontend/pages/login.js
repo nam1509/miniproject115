@@ -29,7 +29,8 @@ export default function Login({ token }) {
     }
 
     const loginForm = () => (
-        <div className={styles.gridContainer}>
+
+        <div className=" bg-amber-300 shadow rounded-lg lg:w-1/3  md:w-1/2 w-full p-4 mt-16 relative m-4   flex flex-col items-center justify-center">
             <div>
                 Username:
             </div>

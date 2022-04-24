@@ -10,10 +10,19 @@ export default function Home({ token }) {
     <Head>
         <title>First Page</title>
     </Head>
-    <div className={styles.container}>
+  
+    <div   >
+    <div  >
         <Navbar />
-        <h1>Home page</h1>
-        No login required!
+       
+        <img
+          src="crab.jpg"
+          class="w-full"
+          alt="Sample image" 
+       
+        />
+        
+    </div>
     </div>
 </Layout>
   )
